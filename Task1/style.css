@@ -16,12 +16,10 @@ a{
 
 /* header */
 header{
-    /* height: 10vh; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
     background-color: #e9eaf8;;
 }
 .logo{
@@ -58,7 +56,6 @@ a:hover::after{
     position: relative;
     height: 79vh;
     background: url(image.jpg) no-repeat center center/cover;
-    /* background-color: aqua; */
     display: flex;
 
 }
