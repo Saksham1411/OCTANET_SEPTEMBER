@@ -1,0 +1,15 @@
+.form-input{
+    margin-right: 10px;
+    width: 15rem;
+    height: 2rem;
+    background: #EEEEEE;
+    border: none;
+    border-radius: 0.5rem;
+}
+.form-btn{
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    background-color: #00ADB5;
+    border: none;
+}
