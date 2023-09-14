@@ -1,10 +1,15 @@
 import './Display.css';
-const Display = ()=>{
-    return(
+const Display = (props) => {
+    return (
         <ul>
-            <li>Saksham<i class="fa-solid fa-trash"></i></li>
-            <li>Saksham<i class="fa-solid fa-trash"></i></li>
-            <li>Saksham<i class="fa-solid fa-trash"></i></li>
+            {/* <li>Saksham<i className="fa-solid fa-trash"></i></li> */}
+            {props.items.map((item, idx) => (
+                <li key={idx}>{item}
+                    <i onClick={(e) => {
+                        props.del(idx);
+                    }}
+                    className="fa-solid fa-trash"></i></li>
+            ))}
         </ul>
     )
 }

@@ -5,19 +5,21 @@ li{
     display: flex;
     background-color: #EEEEEE;
     color:#393E46;
-    width: 15rem;
+    max-width: 15rem;
     padding: 1rem 0.5rem;
     margin-right: 5rem;
     border-radius: 0.5rem;
     font-weight: 600;
     margin-top: 1rem;
     justify-content: space-between;
+    word-wrap: break-word;
 }
-i{
+.fa-trash{
+    margin-left: 1rem;
     transition: all 0.1s linear;
     cursor: pointer;
 }
-i:hover{
+.fa-trash:hover{
     color:rgb(204, 17, 17);
     transform: scale(1.4);
 }

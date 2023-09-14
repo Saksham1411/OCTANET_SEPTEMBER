@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import UserInput from './components/UserInput/UserInput';
 import Display from './components/Display/Display';
-function App() {
 
+let Data = [];
+
+function App() {
+  const [data, setData] = useState(Data);
+
+  function addItems(item) {
+    setData([...data,item]);
+  }
+  function deleteItems(key){
+    console.log(key);
+    const copy = [...data];
+    copy.splice(key,1);
+    console.log(copy);
+    setData([...copy]);
+  }
   return (
     <div className='Main'>
       <header>
         <h1>TODO-LIST</h1>
       </header>
-      <UserInput />
-      <Display/>
+      <UserInput Submit={addItems} />
+      <Display items={data} del={deleteItems}/>
     </div>
   );
 }
