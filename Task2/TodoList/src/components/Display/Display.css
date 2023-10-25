@@ -5,7 +5,7 @@ li{
     display: flex;
     background-color: #EEEEEE;
     color:#393E46;
-    max-width: 15rem;
+    min-width: 15rem;
     padding: 1rem 0.5rem;
     margin-right: 5rem;
     border-radius: 0.5rem;
@@ -13,6 +13,7 @@ li{
     margin-top: 1rem;
     justify-content: space-between;
     word-wrap: break-word;
+    object-fit: contain;
 }
 .fa-trash{
     margin-left: 1rem;

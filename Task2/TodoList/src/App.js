@@ -3,9 +3,9 @@ import './App.css';
 import UserInput from './components/UserInput/UserInput';
 import Display from './components/Display/Display';
 
-let Data = [];
 
 function App() {
+  let Data = [];
   const [data, setData] = useState(Data);
 
   function addItems(item) {
